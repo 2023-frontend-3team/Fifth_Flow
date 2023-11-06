@@ -1,0 +1,84 @@
+// 화면공유
+https://from-us.kr/product/%EB%A7%A5%EC%8B%9C%EB%A9%80-%ED%94%BC%EA%B7%B8%EB%A8%BC%ED%8A%B8-%EC%98%A4%EB%B2%84%EC%85%94%EC%B8%A0-5color/5216/category/72/display/1/
+
+components
+ - Button.js
+layouts
+ - Footer.js
+ - Header.js
+ - layout.js
+main
+ - component 
+ - mainthumNail.js
+ - mainDetailTitle.js
+ - mainDetailPoint.js
+ - mainDetailInfo.js
+ 
+am 
+
+
+
+--준우--
+1. Navigation bar, header  => 변경 될 사항이 많지 않아보여 하나의 컴포넌트로 생각, 다른페이지에서도 재사용 가능 (nav, header)
+2. SectionA => 오른쪽에 있는 사진이 이동, url을 데이터베이스에서 받아오고 지속적으로 넘겨주는 컴포넌트, 다른 상품에 대한 사진도 추가 가능 (productPhoto)
+3. SectionB => 왼쪽에 있는 상품을 설명하는 section을 하나의 컴포넌트로 구상, 다른 페이지에서도 지속적인 사용 가능, 예를 들어 결제 버튼등은 다른 페이지에서도 사용 되어야함 (productDescribe, productPayment)
+4. SectionC => 맨 밑에 있는 추천 아이템들은 클릭수가 많은 것이나 결제 수가 많은 상품들을 데이터베이스에서 뽑아내서 보여질 수 있으므로 해당 컴포넌트로 다른 페이지에서도 사용 가능 (bestProductRecomment)
+5. SectionD => 해당 상품의 디테일한 사진이나 설명등을 보여주는 컴포넌트 하나로 생각 (detailProduct)
+6. SectionE => 리뷰 내용들이나 댓글들을 return 해주는 함수 컴포넌트 (ReviewQA) 
+7. Footer => 회사 설명 관련(footer)
+
+
+
+--하영--
+src
+    layout
+        -header
+        -footer
+    pages
+        main
+            index.js(쇼핑몰 홈페이지)
+        shirts
+            components
+                popup
+                    popup-Img.js
+                    popup-MiniImg.js
+                Q&A
+                    mainQ&A
+                    Q&A-button.js
+                    Q&A-board.js
+                Revew
+                    buttons.js
+                    detail.js
+                    highlight.js
+                    slideBanner.js
+                    widgetChat.js
+                    widgetOption.js
+                AddtoModal.js
+                Button.js
+                Bestitem.js
+                imgDetail.js
+                mainImg.js
+                Product-option.js
+                ShopLens.js
+            index.js
+
+
+--희범--
+src
+    component
+        Button.js
+        Input.js
+    layout
+        Header.js
+        Nav.js
+        Footer.js
+        Combine.js
+    Main
+        title.js
+        info.js
+        product.js
+        bestItem.js
+        review.js
+        qna.js
+    style
+        color.js
